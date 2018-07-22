@@ -11,29 +11,27 @@ public class Program {
         for (int i = 0; i < tablica.length; i++) {
             tablica[i] = rand.nextInt(10);
 
-
         }
 
         System.out.println(Arrays.toString(tablica));
 
+        String x1 = new String();
+        String x2 = new String();
+
         for (int i = 0; i < tablica.length; i++) {
-
-
-            int x;
-            x = tablica[tablica.length - i - 1];
-
-            if (i <tablica.length) {
-                System.out.print(tablica[i]);
-            }
-
-            System.out.print(x);
-
-
+            x1 = x1 + tablica[i];
+            x2 = x2 + tablica[tablica.length - i - 1];
         }
+
+        String x = x1 + x2;
+        System.out.print(x);
 
     }
 
 }
+
+
+
 
 
 
